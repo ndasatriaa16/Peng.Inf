@@ -11,7 +11,7 @@ bla bla bla
 - Merk : Eliction
 - Tagline : Angkot Online pertama diIndonesia 
 - Campaign : Bagaimana membuat aplikasi yang membuat orang merasakan kemudahan dan tidak ribet saat mau naik angkot
-- Target User : Semua orang yang sedang berada di Cikajang
+- Target User : Semua orang 8 tahun keatas yang sedang berada di Cikajang
 - User Experience Theme :
    1.  Mudah
    2.  Sederhana
