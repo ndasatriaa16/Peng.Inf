@@ -4,8 +4,14 @@
   karena jarak yang terlalu dekat dengan sopir lain.
 
 ## 1.2. Deksripsi Teknologi Informasi
-
-bla bla bla
+Aplikasi ini berupaya memepermudah penarikan angkot bagi penumapang dan suprinya itu sendiri dan memajukan teknologi informasi di daerah Cikajang terkhusus di bidang transportasi umum yang paling sering di pakai yaitu angkot.
+- Bahasa pemograman yang saya gunakan adalah Java
+- Code editor yang saya gunakan adalah visual Studio code
+- Untuk Desain awal saya gunakan Figma
+- Untuk IDE saya gunakan Java NetBeans
+- Untuk framework dan beckend saya gunakan Spring Boot
+- Untuk database saya gunakan PostgreSQL
+  
 
 ## 1.3. Branding
 - Merk : Eliction
