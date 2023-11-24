@@ -52,21 +52,23 @@ Cara membuat aneka macam bentuk grafik menggunakan mermaid.js bisa lihat di [htt
 
 ```mermaid
 erDiagram
-    PENUMPANG ||--o{ HOME : login
-    PENUMPANG {
-        string name
-        string custNumber
-        string sector
+      
+    PENUMPANG  ||--|{ LOG-IN : log_in
+    LOG-IN {
+        
     }
-    HOME ||--|{ LINE-ITEM : contains
-    ORDER {
-        int orderNumber
-        string deliveryAddress
+    LOG-IN ||--|{ HOME : masuk
+        string email
+        string password
+        
     }
-    LINE-ITEM {
-        string productCode
-        int quantity
-        float pricePerUnit
+    HOME ||--|{ BORONG :
+    }
+    LOG-IN ||--|{ BUAT-ACCOUNT : gak masuk
+     
+    }
+    BUAT-ACCOUNT  ||--|{
+    String email
     }
 ```
 
