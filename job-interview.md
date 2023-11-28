@@ -48,37 +48,71 @@ Sopir | Bisa berkomunikasi dengan penumpang yang ingin borong | Saya bisa menyes
 
 ## 3. Struktur Data
 
-Cara membuat aneka macam bentuk grafik menggunakan mermaid.js bisa lihat di [https://mermaid.js.org/syntax/entityRelationshipDiagram.html](https://mermaid.js.org/syntax/entityRelationshipDiagram.html) 
-
 ```mermaid
 erDiagram
-      
-    PENUMPANG  ||--|{ LOG-IN : log_in
-    LOG-IN {
-        
+    PENUMPANG ||--o{ LOGIN : login
+    PENUMPANG {
     }
-    LOG-IN ||--|{ HOME : masuk
-        string email
-        string password
-        
+    PENUMPANG ||--|{ BUAT_AKUN : buat_akun
+    PENUMPANG {
     }
-    HOME ||--|{ BORONG :
+    BUAT_AKUN ||--o| HOME : masuk
+    BUAT_AKUN{
+    string nama_lengkap
+    string email
+    string alamat
+    id no_hp
+    string password
+    var masuk
     }
-    LOG-IN ||--|{ BUAT-ACCOUNT : gak masuk
-     
+    LOGIN ||--o{ HOME : masuk
+    LOGIN {
+    string email
+    string password
+    var masuk
     }
-    BUAT-ACCOUNT  ||--|{
-    String email
+    HOME ||--|{ BORONG : borong
+    HOME {
+    var rute
+    img map
     }
+    HOME ||--|{ ACCOUNT : akun
+    HOME {
+    }
+    BORONG {
+    var pilih_mobil
+    var search_car
+    img mobil
+    var chat_sopir
+    }
+    ACCOUNT {
+    var saya
+    var pengaturan
+    var ubah_sandi
+    var tentang
+    var ganti_akun
+    var keluar
+    }
+    
+
+   
+  
 ```
 
 ## 4. Arsitektur Sistem
-
-Masih pake mermaid.js juga bisa lihat flowchart di [https://mermaid.js.org/syntax/flowchart.html](https://mermaid.js.org/syntax/flowchart.html)
+```mermaid
+flowchart TD
+  id1[(Database-PostgreSQL)] <==> id2[Backend-SpringBoots] <==> id3[Web_Server-Nginx] <==> 1d4[Frontend-JavaNetbeans]
+```
 
 ## 5. Teknologi, Library, dan Framework
 
-bla bla bla
+- Code Editor            =  Visual Studio Code
+- Language Programing    = Java
+- IDE                    = Java NetBeans
+- Framework              = Spring Boots
+- Library                = Apache Commons
+- Database               = PostgreSQL
 
 ## 6. Desain User Experience dan User Interface
 ![Borong](https://github.com/ndasatriaa16/Peng.Inf/assets/144712874/0522d70c-81d2-4cb3-a5f8-0be738fcbfcd)
